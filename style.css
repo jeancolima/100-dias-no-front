@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    /* Cores */
+    --cor-primaria: #c8b6ff;
+    --cor-secundaria: #FFBADC;
+    --cor-terciaria: #9276DC;
+    --branco: #FFF;
+    --preto: #000;
+    /* Fontes */
+    --fonte-primaria: 'Inter', sans-serif;
+    --fonte-secundaria: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    max-width: 1000px;
+}
+
+.logo a {
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.social-medias ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.introduction-banner {
+    width: 95%;
+    height: 200px;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.introduction-banner__text {
+    width: 500px;
+    text-align: center;
+}
+
+.introduction-banner__text h2{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+.introduction-banner__text p {
+    line-height: 1.3rem;
+}
+
+.main-content {
+    width: 95%;
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.challenges-filter ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.challenges-filter ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    width: calc(300px - 4rem);
+    height: 70px;
+    cursor: pointer;
+    background-color: var(--cor-primaria);
+    transition: .3s;
+    border-radius: 8px;
+}
+
+.challenges-filter ul li:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--branco);
+}
+
+.challenges-filter ul li.selected {
+    height: 80px;
+    background-color: var(--cor-terciaria);
+    border-radius: 8px;
+    color: var(--branco);
+}
+
+.challenges-filter ul li h3 {
+    font-weight: bold;
+}
+
+.challenges-filter ul li img {
+    width: 24px;
+}
+
+.challenges {
+    width: calc(100% - 332px);
+    max-width: 700px;
+}
+
+.challenges-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.challenges-buttons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: .8rem 0 1rem 0;
+}
+
+.btn-invert-order {
+    width: 150px;
+    height: 40px;
+    background-color: var(--cor-secundaria);
+    border: 1.5px solid var(--cor-secundaria);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.btn-invert-order:hover {
+    background-color: var(--branco);
+}
+
+.challenges ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: var(--cor-primaria);
+    border-radius: 16px;
+    padding: 2rem 0;
+}
+
+.challenges ul li {
+    position: relative;
+    width: calc(280px - 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1rem;
+    border-radius: 16px;
+    background-color: var(--branco);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: .3s;
+}
+
+.challenge-image {
+    border-radius: 8px;
+}
+
+.challenges ul li h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--cor-terciaria);
+}
+
+.challenges ul li p {
+    line-height: 1.5rem;
+}
+
+.challenge-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.challenge-buttons button {
+    width: 142px;
+    height: 30px;
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.challenge-buttons button:hover {
+    background-color: var(--branco);
+}
+
+footer {
+    margin-top: 5rem;
+}
