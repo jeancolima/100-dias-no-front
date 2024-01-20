@@ -69,12 +69,14 @@ function trocarImagem(e) {
 function filtrar(e) {
     const listaDeNos = e.childNodes;
     const textoListaDeNos = listaDeNos[1].innerText;
+    const tituloDesafios = document.querySelector(".challenges-title");
 
     switch (textoListaDeNos) {
         case "Todos":
             for (let i = 0; i < itensListaDeDesafios.length; i++) {
                 itensListaDeDesafios[i].style.display = "flex";
             }
+            tituloDesafios.innerText = "Todos";
             break;
         case "Com Javascript":
             const itensListaDeDesafiosComJavascript = document.querySelectorAll(".challenges ul li.with-javascript");
@@ -86,6 +88,7 @@ function filtrar(e) {
             for (let i = 0; i < itensListaDeDesafiosComJavascript.length; i++) {
                 itensListaDeDesafiosComJavascript[i].style.display = "flex";
             }
+            tituloDesafios.innerText = "Com Javascript";
             break;
         case "Sem Javascript":
             const itensListaDeDesafiosSemJavascript = document.querySelectorAll(".challenges ul li.without-javascript");
@@ -97,6 +100,7 @@ function filtrar(e) {
             for (let i = 0; i < itensListaDeDesafiosSemJavascript.length; i++) {
                 itensListaDeDesafiosSemJavascript[i].style.display = "flex";
             }
+            tituloDesafios.innerText = "Sem Javascript";
             break;
         case "Úteis":
             const itensListaDeDesafiosUteis = document.querySelectorAll(".challenges ul li.util");
@@ -108,6 +112,7 @@ function filtrar(e) {
             for (let i = 0; i < itensListaDeDesafiosUteis.length; i++) {
                 itensListaDeDesafiosUteis[i].style.display = "flex";
             }
+            tituloDesafios.innerText = "Úteis";
             break;
         case "Landing Pages":
             const itensListaDeDesafiosLandingPages = document.querySelectorAll(".challenges ul li.landing-pages");
@@ -119,6 +124,7 @@ function filtrar(e) {
             for (let i = 0; i < itensListaDeDesafiosLandingPages.length; i++) {
                 itensListaDeDesafiosLandingPages[i].style.display = "flex";
             }
+            tituloDesafios.innerText = "Landing Pages";
             break;
     }
 }
