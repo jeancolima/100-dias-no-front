@@ -100,6 +100,7 @@ main {
 
 .introduction-banner__text p {
     line-height: 1.3rem;
+    text-wrap: pretty;
 }
 
 .main-content {
@@ -208,6 +209,7 @@ main {
 
 .challenge-image {
     border-radius: 8px;
+    height: 132px;
 }
 
 .challenges ul li h3 {
@@ -218,6 +220,7 @@ main {
 
 .challenges ul li p {
     line-height: 1.5rem;
+    text-wrap: pretty;
 }
 
 .challenge-buttons {
