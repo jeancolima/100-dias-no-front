@@ -210,6 +210,7 @@ main {
 .challenge-image {
     border-radius: 8px;
     height: 132px;
+    border: 2px solid var(--cor-primaria);
 }
 
 .challenges ul li h3 {
