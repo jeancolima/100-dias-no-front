@@ -49,7 +49,7 @@ function trocarImagem(e) {
             imagensFiltro[3].src = "images/tools.png";
             imagensFiltro[4].src = "images/website.png";
             break;
-        case "Úteis":
+        case "Úteis e Jogos":
             imagensFiltro[0].src = "images/grid.png";
             imagensFiltro[1].src = "images/java-script.png";
             imagensFiltro[2].src = "images/block.png";
@@ -102,7 +102,7 @@ function filtrar(e) {
             }
             tituloDesafios.innerText = "Sem Javascript";
             break;
-        case "Úteis":
+        case "Úteis e Jogos":
             const itensListaDeDesafiosUteis = document.querySelectorAll(".challenges ul li.util");
 
             for (let i = 0; i < itensListaDeDesafios.length; i++) {
@@ -112,7 +112,7 @@ function filtrar(e) {
             for (let i = 0; i < itensListaDeDesafiosUteis.length; i++) {
                 itensListaDeDesafiosUteis[i].style.display = "flex";
             }
-            tituloDesafios.innerText = "Úteis";
+            tituloDesafios.innerText = "Úteis e Jogos";
             break;
         case "Landing Pages":
             const itensListaDeDesafiosLandingPages = document.querySelectorAll(".challenges ul li.landing-pages");
